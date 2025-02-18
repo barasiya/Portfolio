@@ -3,13 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aakash Barasiya</title>
+    <title>Aakash Barasiya - Frontend Web Developer</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            color: #343a40;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        body.onload {
+            opacity: 1;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .image-container {
+            text-align: right;
+            margin-top: 20px; 
+        }
+
+        .right-image {
+            width: 300px;  
+            height: auto;  
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto; 
+            border-radius: 50%; 
+            
+        
+
+        .hero-text h1, .hero-text h2, .hero-text p {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+        }
+
+        .hero-text h1 { animation-delay: 0.3s; }
+        .hero-text h2 { animation-delay: 0.6s; }
+        .hero-text p { animation-delay: 0.9s; }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background: #ff5733;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #343a40;
+            color: white;
+        }
+
+        .navbar .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar .nav-links li {
+            margin-left: 20px;
+        }
+
+        .navbar .nav-links li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar .hamburger {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .navbar .nav-links {
+                display: none;
+            }
+            .navbar .hamburger {
+                display: block;
+                font-size: 2em;
+            }
+        }
+
+    </style>
 </head>
-<body>
+<body onload="document.body.style.opacity='1'">
+
     <header>
         <nav class="navbar">
             <div class="logo">Aakash</div>
@@ -28,40 +148,287 @@
     <section class="hero">
         <div class="hero-text">
             <h1>Hello! I'm <span class="highlight">Aakash Barasiya</span></h1>
-            <h2>I'm a <span class="highlight">Frontend Web Developer.</span></h2>
+            <h2>I'm a <span class="highlight">Frontend Web Developer</span>.</h2>
             <p>I craft responsive and dynamic websites with a focus on modern design and user experience.</p>
             <a href="contact.html" class="btn">Contact Me</a>
         </div>
-        <div class="hero-image">
-            <img src="./AK-imageonline.co-merged.jpg" alt="Aakash Barasiya">
+        <img src="AK-imageonline.co-merged.jpg" alt="Aakash Barasiya">
+    </section>
+
+    <section id="about" class="about-me">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Hi! I'm <strong>Aakash Barasiya</strong>, a passionate Frontend Web Developer with a strong focus on creating beautiful, responsive, and user-friendly websites. I specialize in HTML, CSS, JavaScript, and modern frameworks to build interactive and high-performance web applications.</p>
+                    <p>With a keen eye for design and detail, I strive to blend creativity with functionality, ensuring seamless user experiences across all devices. Whether it's crafting pixel-perfect layouts or optimizing website performance, I love bringing ideas to life through code.</p>
+                    <p>Let’s connect and build something amazing together!</p>
+                    <a href="about.html" class="btn">Learn More</a>
+                </div>
+                <div class="about-image">
+                    <img src="mr akash .jpg" alt="Aakash Barasiya">
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="challenges-welcome">
-        <h2>Challenges Welcome</h2>
-        <p>I thrive on solving complex problems and welcome any challenges that push my skills to the next level. Let's collaborate and build something amazing together!</p>
-        <div class="btn-container">
-            <a href="about.html" class="btn">Learn More About Me</a>
-            <a href="Project.html" class="btn">See My Projects</a>
+
+    
+           
+
+
+
+
+
+
+
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills and Tools</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <div class="container mx-auto p-8">
+        <h1 class="text-4xl font-bold text-center mb-8">Skills and Tools</h1>
+        
+       
+
+
+        <!-- Back-End Section -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold mb-4">Back-End</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+                <div class="flex items-center justify-center p-4 border rounded-lg shadow-lg">
+                    <img src="picNodeJs.png" alt="Node.js" class="w-16 h-16">
+                </div>
+                <div class="flex items-center justify-center p-4 border rounded-lg shadow-lg">
+                    <img src="picExpressJs.png" alt="Express.js" class="w-16 h-16">
+                </div>
+                <div class="flex items-center justify-center p-4 border rounded-lg shadow-lg">
+                    <img src="picRESTAPI.png" alt="REST API" class="w-16 h-16">
+                </div>
+                <div class="flex items-center justify-center p-4 border rounded-lg shadow-lg">
+                    <img src="picWebSocket.png" alt="Web Socket" class="w-16 h-16">
+                </div>
+                <div class="flex items-center justify-center p-4 border rounded-lg shadow-lg">
+                    <img src="picMongoDB.png" alt="MongoDB" class="w-16 h-16">
+                </div>
+                <div class="flex items-center justify-center p-4 border rounded-lg shadow-lg">
+                    <img src="picMongoose.png" alt="Mongoose" class="w-16 h-16">
+                </div>
+                <div class="flex items-center justify-center p-4 border rounded-lg shadow-lg">
+                    <img src="picJWT.png" alt="JWT" class="w-16 h-16">
+                </div>
+                <div class="flex items-center justify-center p-4 border rounded-lg shadow-lg">
+                    <img src="picPassportJS.png" alt="Passport JS" class="w-16 h-16">
+                </div>
+                <div class="flex items-center justify-center p-4 border rounded-lg shadow-lg">
+                    <img src="picGoogleLogin.png" alt="Google Login" class="w-16 h-16">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Tools Section -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold mb-4">Tools</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+                <div class="flex items-center justify-center p-4 border rounded-lg shadow-lg">
+                    <img src="picGit.png" alt="Git" class="w-16 h-16">
+                </div>
+                <div class="flex items-center justify-center p-4 border rounded-lg shadow-lg">
+                    <img src="picGithub.png" alt="GitHub" class="w-16 h-16">
+                </div>
+                <div class="flex items-center justify-center p-4 border rounded-lg shadow-lg">
+                    <img src="picNpm.png" alt="npm" class="w-16 h-16">
+                </div>
+                <div class="flex items-center justify-center p-4 border rounded-lg shadow-lg">
+                    <img src="picVSCode.png" alt="VS Code" class="w-16 h-16">
+                </div>
+                <div class="flex items-center justify-center p-4 border rounded-lg shadow-lg">
+                    <img src="picPostman.png" alt="Postman" class="w-16 h-16">
+                </div>
+                <div class="flex items-center justify-center p-4 border rounded-lg shadow-lg">
+                    <img src="picNetlify.png" alt="Netlify" class="w-16 h-16">
+                </div>
+                <div class="flex items-center justify-center p-4 border rounded-lg shadow-lg">
+                    <img src="picHeroku.png" alt="Heroku" class="w-16 h-16">
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+ChatGPT said:
+To design the "Back-End Section" and "Tools Section" you provided, here's a simple and clean approach using HTML and CSS that makes it visually appealing and responsive. I’ll integrate TailwindCSS for easy layout management and responsiveness, along with a custom look to make your section stand out.
+
+html
+Copy
+Edit
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back-End & Tools</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Back-End Section -->
+    <section class="container mx-auto p-8 mb-16">
+        <h2 class="text-3xl font-semibold text-center mb-8">Back-End</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+            <div class="flex items-center justify-center p-4 border border-gray-300 rounded-lg shadow-lg hover:shadow-xl transition">
+                <img src="picNodeJs.png" alt="Node.js" class="w-16 h-16">
+            </div>
+            <div class="flex items-center justify-center p-4 border border-gray-300 rounded-lg shadow-lg hover:shadow-xl transition">
+                <img src="picExpressJs.png" alt="Express.js" class="w-16 h-16">
+            </div>
+            <div class="flex items-center justify-center p-4 border border-gray-300 rounded-lg shadow-lg hover:shadow-xl transition">
+                <img src="picRESTAPI.png" alt="REST API" class="w-16 h-16">
+            </div>
+            <div class="flex items-center justify-center p-4 border border-gray-300 rounded-lg shadow-lg hover:shadow-xl transition">
+                <img src="picWebSocket.png" alt="Web Socket" class="w-16 h-16">
+            </div>
+            <div class="flex items-center justify-center p-4 border border-gray-300 rounded-lg shadow-lg hover:shadow-xl transition">
+                <img src="picMongoDB.png" alt="MongoDB" class="w-16 h-16">
+            </div>
+            <div class="flex items-center justify-center p-4 border border-gray-300 rounded-lg shadow-lg hover:shadow-xl transition">
+                <img src="picMongoose.png" alt="Mongoose" class="w-16 h-16">
+            </div>
+            <div class="flex items-center justify-center p-4 border border-gray-300 rounded-lg shadow-lg hover:shadow-xl transition">
+                <img src="picJWT.png" alt="JWT" class="w-16 h-16">
+            </div>
+            <div class="flex items-center justify-center p-4 border border-gray-300 rounded-lg shadow-lg hover:shadow-xl transition">
+                <img src="picPassportJS.png" alt="Passport JS" class="w-16 h-16">
+            </div>
+            <div class="flex items-center justify-center p-4 border border-gray-300 rounded-lg shadow-lg hover:shadow-xl transition">
+                <img src="picGoogleLogin.png" alt="Google Login" class="w-16 h-16">
+            </div>
         </div>
     </section>
 
-    <section class="quick-links">
-        <h2>Quick Links</h2>
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="Project.html">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="Resume.html">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <!-- Tools Section -->
+    <section class="container mx-auto p-8 mb-16">
+        <h2 class="text-3xl font-semibold text-center mb-8">Tools</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+            <div class="flex items-center justify-center p-4 border border-gray-300 rounded-lg shadow-lg hover:shadow-xl transition">
+                <img src="picGit.png" alt="Git" class="w-16 h-16">
+            </div>
+            <div class="flex items-center justify-center p-4 border border-gray-300 rounded-lg shadow-lg hover:shadow-xl transition">
+                <img src="picGithub.png" alt="GitHub" class="w-16 h-16">
+            </div>
+            <div class="flex items-center justify-center p-4 border border-gray-300 rounded-lg shadow-lg hover:shadow-xl transition">
+                <img src="picNpm.png" alt="npm" class="w-16 h-16">
+            </div>
+            <div class="flex items-center justify-center p-4 border border-gray-300 rounded-lg shadow-lg hover:shadow-xl transition">
+                <img src="picVSCode.png" alt="VS Code" class="w-16 h-16">
+            </div>
+            <div class="flex items-center justify-center p-4 border border-gray-300 rounded-lg shadow-lg hover:shadow-xl transition">
+                <img src="picPostman.png" alt="Postman" class="w-16 h-16">
+            </div>
+            <div class="flex items-center justify-center p-4 border border-gray-300 rounded-lg shadow-lg hover:shadow-xl transition">
+                <img src="picNetlify.png" alt="Netlify" class="w-16 h-16">
+            </div>
+            <div class="flex items-center justify-center p-4 border border-gray-300 rounded-lg shadow-lg hover:shadow-xl transition">
+                <img src="picHeroku.png" alt="Heroku" class="w-16 h-16">
+            </div>
+        </div>
     </section>
+
+
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="text-3xl font-semibold text-center mb-8">Projects</h2>
+            
+            <!-- Hospital Management System Project -->
+            <div class="project-item mb-16">
+                <h3 class="text-2xl font-bold">Hospital Management System</h3>
+                <p>This system is designed to manage the hospital's day-to-day activities such as patient records, appointments, and billing. It helps streamline operations and improve efficiency in healthcare services.</p>
+                <a href="hospital-management-system.html" class="btn">View Project</a>
+            </div>
+    
+            <!-- Online Voting System Project -->
+            <div class="project-item mb-16">
+                <h3 class="text-2xl font-bold">Online Voting System</h3>
+                <p>The online voting system allows citizens to cast their votes electronically, making the voting process more efficient and secure. It is designed to maintain transparency and reduce fraud.</p>
+                <a href="online-voting-system.html" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+    <section id="contact" class="contact">
+        <div class="container p-8">
+            <h2 class="text-3xl font-semibold text-center mb-8">Let's Connect</h2>
+            
+            <div class="contact-info">
+                <p class="text-lg"><strong>Name:</strong> Aakash Barasiya </p>
+                <p class="text-lg"><strong>Email:</strong> <a href="barasia2001@gmail.com" class="text-blue-600">barasia2001@gmail.com</a></p>
+                <p class="text-lg"><strong>Phone:</strong> <a href="tel:+91 9575133239" class="text-blue-600">+91 9575133239</a></p>
+                <p class="text-lg"><strong>Address:</strong> bhopal;, India</p>
+            </div>
+    
+            <div class="text-center mt-8">
+                <a href="barasia2001@gmail.com" class="btn">Contact via Email</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="leave-message" class="leave-message">
+        <div class="container p-8">
+            <h2 class="text-3xl font-semibold text-center mb-8">Leave Me a Message</h2>
+    
+            <form action="your-backend-endpoint-here" method="POST" class="space-y-4">
+                <!-- Name Field -->
+                <div class="flex flex-col">
+                    <label for="name" class="text-lg font-semibold">Name</label>
+                    <input type="text" id="name" name="name" required class="p-2 border rounded-lg" placeholder="Your Name">
+                </div>
+    
+                <!-- Email Field -->
+                <div class="flex flex-col">
+                    <label for="email" class="text-lg font-semibold">Email</label>
+                    <input type="email" id="email" name="email" required class="p-2 border rounded-lg" placeholder="Your Email">
+                </div>
+    
+                <!-- Message Field -->
+                <div class="flex flex-col">
+                    <label for="message" class="text-lg font-semibold">Message</label>
+                    <textarea id="message" name="message" required class="p-2 border rounded-lg" rows="4" placeholder="Your Message"></textarea>
+                </div>
+    
+                <!-- Submit Button -->
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+
+</body>
+</html>
+
+
+
+
+
+
 
     <footer>
         <p>&copy; 2025 Aakash Barasiya. All Rights Reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
