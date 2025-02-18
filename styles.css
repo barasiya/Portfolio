@@ -625,7 +625,7 @@ body.loaded {
     text-align: left;
 }
 
-.about-image {
+.about-image { 
     flex: 1;
 }
 
@@ -643,7 +643,8 @@ body.loaded {
     max-width: 100%;
     height: auto; 
     border-radius: 50%; 
-    
+}
+
 
 /* Footer */
 footer {
