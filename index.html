@@ -7,126 +7,6 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f8f9fa;
-            margin: 0;
-            padding: 0;
-            color: #343a40;
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
-
-        body.onload {
-            opacity: 1;
-        }
-
-        /* Hero Section */
-        .hero {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: #007bff;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            position: relative;
-        }
-
-        .image-container {
-            text-align: right;
-            margin-top: 20px; 
-        }
-
-        .right-image {
-            width: 300px;  
-            height: auto;  
-        }
-
-        .hero img {
-            max-width: 100%;
-            height: auto; 
-            border-radius: 50%; 
-            
-        
-
-        .hero-text h1, .hero-text h2, .hero-text p {
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInUp 1s forwards;
-        }
-
-        .hero-text h1 { animation-delay: 0.3s; }
-        .hero-text h2 { animation-delay: 0.6s; }
-        .hero-text p { animation-delay: 0.9s; }
-
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .btn {
-            padding: 10px 20px;
-            background: #ff5733;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-        }
-
-        /* Navbar */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background: #343a40;
-            color: white;
-        }
-
-        .navbar .logo {
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-
-        .navbar .nav-links {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        .navbar .nav-links li {
-            margin-left: 20px;
-        }
-
-        .navbar .nav-links li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .navbar .hamburger {
-            display: none;
-        }
-
-        @media (max-width: 768px) {
-            .navbar .nav-links {
-                display: none;
-            }
-            .navbar .hamburger {
-                display: block;
-                font-size: 2em;
-            }
-        }
-
-    </style>
 </head>
 <body onload="document.body.style.opacity='1'">
 
@@ -171,201 +51,98 @@
             </div>
         </div>
     </section>
-    
 
-
-    
-           
-
+</body>
+</html>
 
 
 
 
+<div class="container">
+    <h1>My Skills & Tools</h1>
+    
+    <section>
+        <h2>Skills</h2>
+        <h3>Frontend</h3>
+        <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>Bootstrap</li>
+            <li>Tailwind CSS</li>
+            <li>Sass</li>
+            <li>GSAP</li>
+            <li>React JS</li>
+            <li>Redux</li>
+            <li>Next JS</li>
+            <li>Material UI</li>
+            <li>Angular JS</li>
+            <li>Vue JS</li>
+            <li>Flutter</li>
+        </ul>
 
+        <h3>Backend</h3>
+        <ul class="skills-list">
+            <li>Node JS</li>
+            <li>Express JS</li>
+            <li>Python</li>
+            <li>Flask</li>
+            <li>Fast API</li>
+            <li>Uvicorn</li>
+            <li>Django</li>
+            <li>MySQL</li>
+            <li>Postgresql</li>
+            <li>MongoDB</li>
+            <li>Firebase</li>
+            <li>AppWrite</li>
+        </ul>
 
+        <h3>DevOps</h3>
+        <ul class="skills-list">
+            <li>AWS</li>
+            <li>Google Cloud</li>
+            <li>Docker</li>
+            <li>Nginx</li>
+        </ul>
 
+        <h3>Machine Learning</h3>
+        <ul class="skills-list">
+            <li>Python</li>
+            <li>TensorFlow</li>
+            <li>Jupyter</li>
+            <li>Google Colab</li>
+            <li>Scikit-learn</li>
+        </ul>
 
+        <h3>Multi-Media</h3>
+        <ul class="skills-list">
+            <li>Adobe Photoshop</li>
+            <li>Adobe Lightroom</li>
+            <li>Adobe Illustrator</li>
+            <li>Adobe Premiere Pro</li>
+            <li>Adobe After Effects</li>
+            <li>Figma</li>
+            <li>Adobe XD</li>
+        </ul>
 
-    
-       
-
-      
-
-
- 
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>My Portfolio</title>
-          <style>
-            body {
-                font-family: Arial, sans-serif;
-                line-height: 1.6;
-                margin: 0;
-                padding: 0;
-                background-color: #f4f4f4;
-            }
-    
-            header {
-                background-color: #0630eb;
-                color: #fff;
-                padding: 20px;
-                text-align: center;
-            }
-    
-            header h1 {
-                margin: 0;
-                font-size: 2rem;
-            }
-    
-            section {
-                padding: 20px;
-                margin: 20px;
-                background-color: #fff;
-                border-radius: 8px;
-                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            }
-    
-            h2 {
-                color: rgba(23, 2, 2, 0.8);
-                font-size: 1.6rem;
-                margin-bottom: 10px;
-            }
-    
-            ul {
-                list-style-type: none;
-                padding-left: 0;
-            }
-    
-            li {
-                margin: 5px 0;
-            }
-    
-            .skills-list, .experience-list, .project-list {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-                gap: 20px;
-            }
-    
-            .experience-item, .project-item {
-                background-color: #f8f8f8;
-                padding: 15px;
-                border-radius: 8px;
-                box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
-            }
-    
-            .experience-item h3, .project-item h3 {
-                font-size: 1.4rem;
-                color: #333;
-            }
-    
-            .experience-item p, .project-item p {
-                color: #555;
-                font-size: 1rem;
-            }
-    
-            footer {
-                background-color: #0630eb;
-                color: #fff;
-                text-align: center;
-                padding: 10px 0;
-                position: absolute;
-                bottom: 0;
-                width: 100%;
-            }
-    
-          </style>
-        </head>
-        <body>
-          <header>
-            <h1>My Skills & tools</h1>
-          </header>
-        
-          <section>
-            <h2>Skills</h2>
-            <h3>Frontend</h3>
-            <ul class="skills-list">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>TypeScript</li>
-              <li>Bootstrap</li>
-              <li>Tailwind CSS</li>
-              <li>Sass</li>
-              <li>GSAP</li>
-              <li>React JS</li>
-              <li>Redux</li>
-              <li>Next JS</li>
-              <li>Material UI</li>
-              <li>Angular JS</li>
-              <li>Vue JS</li>
-              <li>Flutter</li>
-            </ul>
-        
-            <h3>Backend</h3>
-            <ul class="skills-list">
-              <li>Node JS</li>
-              <li>Express JS</li>
-              <li>Python</li>
-              <li>Flask</li>
-              <li>Fast API</li>
-              <li>Uvicorn</li>
-              <li>Django</li>
-              <li>MySQL</li>
-              <li>Postgresql</li>
-              <li>MongoDB</li>
-              <li>Firebase</li>
-              <li>AppWrite</li>
-            </ul>
-        
-            <h3>DevOps</h3>
-            <ul class="skills-list">
-              <li>AWS</li>
-              <li>Google Cloud</li>
-              <li>Docker</li>
-              <li>Nginx</li>
-            </ul>
-        
-            <h3>Machine Learning</h3>
-            <ul class="skills-list">
-              <li>Python</li>
-              <li>TensorFlow</li>
-              <li>Jupyter</li>
-              <li>Google Colab</li>
-              <li>Scikit-learn</li>
-            </ul>
-        
-            <h3>Multi-Media</h3>
-            <ul class="skills-list">
-              <li>Adobe Photoshop</li>
-              <li>Adobe Lightroom</li>
-              <li>Adobe Illustrator</li>
-              <li>Adobe Premiere Pro</li>
-              <li>Adobe After Effects</li>
-              <li>Figma</li>
-              <li>Adobe XD</li>
-            </ul>
-        
-            <h3>Programming & Others</h3>
-            <ul class="skills-list">
-              <li>C Programming</li>
-              <li>C++</li>
-              <li>Python</li>
-              <li>Java</li>
-              <li>JavaScript</li>
-              <li>TypeScript</li>
-              <li>Git</li>
-              <li>GitHub</li>
-              <li>Vercel</li>
-              <li>Netlify</li>
-              <li>Heroku</li>
-              <li>VS Code</li>
-              <li>Postman</li>
-            </ul>
-          </section>
-        
+        <h3>Programming & Others</h3>
+        <ul class="skills-list">
+            <li>C Programming</li>
+            <li>C++</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Vercel</li>
+            <li>Netlify</li>
+            <li>Heroku</li>
+            <li>VS Code</li>
+            <li>Postman</li>
+        </ul>
+    </section>
 
 
     <section id="projects" class="projects">
@@ -393,6 +170,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <section id="contact" class="contact">
         <div class="container p-8">
             <h2 class="text-3xl font-semibold text-center mb-8">Let's Connect</h2>
@@ -410,36 +201,53 @@
         </div>
     </section>
     
-    <section id="leave-message" class="leave-message">
-        <div class="container p-8">
-            <h2 class="text-3xl font-semibold text-center mb-8">Leave Me a Message</h2>
+    <section id="leave-message" class="leave-message bg-gray-100 py-12">
+        <div class="container mx-auto max-w-lg p-8 bg-white shadow-lg rounded-lg">
+            <h2 class="text-3xl font-semibold text-center text-gray-800 mb-6">Leave Me a Message</h2>
     
             <form action="your-backend-endpoint-here" method="POST" class="space-y-4">
                 <!-- Name Field -->
                 <div class="flex flex-col">
-                    <label for="name" class="text-lg font-semibold">Name</label>
-                    <input type="text" id="name" name="name" required class="p-2 border rounded-lg" placeholder="Your Name">
+                    <label for="name" class="text-lg font-semibold text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" required 
+                        class="p-3 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none" 
+                        placeholder="Your Name">
                 </div>
     
                 <!-- Email Field -->
                 <div class="flex flex-col">
-                    <label for="email" class="text-lg font-semibold">Email</label>
-                    <input type="email" id="email" name="email" required class="p-2 border rounded-lg" placeholder="Your Email">
+                    <label for="email" class="text-lg font-semibold text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" required 
+                        class="p-3 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none" 
+                        placeholder="Your Email">
                 </div>
     
                 <!-- Message Field -->
                 <div class="flex flex-col">
-                    <label for="message" class="text-lg font-semibold">Message</label>
-                    <textarea id="message" name="message" required class="p-2 border rounded-lg" rows="4" placeholder="Your Message"></textarea>
+                    <label for="message" class="text-lg font-semibold text-gray-700">Message</label>
+                    <textarea id="message" name="message" required 
+                        class="p-3 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none" 
+                        rows="4" placeholder="Your Message"></textarea>
                 </div>
     
                 <!-- Submit Button -->
                 <div class="text-center mt-4">
-                    <button type="submit" class="btn">Send Message</button>
+                    <button type="submit" 
+                        class="bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
+                        Send Message
+                    </button>
                 </div>
             </form>
         </div>
     </section>
+    
 
-</body>
-</html>
+
+</div>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Connect with me:</p>
+    <div class="social-links">
+        <a href="https://wa.me/qr/J2TC5TLTLMNJG1" target="_blank" class="whatsapp">WhatsApp</a>
+        <a href="https://www.instagram.com/_akash_12sia_02?utm_source=qr&igsh=MTd1cXQ5bGVkNzdkMw==" target="_blank" class="instagram">Instagram</a>
+        <a href="https://www.linkedin.com/in/aakash-barasiya-3rd-13173b215?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+    </div>
